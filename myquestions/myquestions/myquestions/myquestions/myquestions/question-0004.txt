@@ -1,0 +1,7 @@
+Se tiene un DataFrame con columnas numéricas.
+
+Escribe una función llamada calcular_estadisticas(df) que:
+
+1. Calcule la media de cada columna
+2. Calcule la desviación estándar de cada columna
+3. Devuelva dos arrays de numpy: uno con las medias y otro con las desviaciones estándar
