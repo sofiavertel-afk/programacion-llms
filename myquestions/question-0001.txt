@@ -1,8 +1,8 @@
-Se tiene un DataFrame de pandas que contiene valores faltantes (NaN) en columnas numéricas.
+Se tiene un DataFrame de pandas que contiene valores numéricas con valores faltantes (NaN) y presencia de valores atípicos.
 
-Escribe una función llamada preparar_datos(df, target_col) que:
+Escribe una función llamada preparar_datos_robustos(df, target_col) que:
 
-1. Separe X e y usando target_col
-2. Impute los valores faltantes usando la media (SimpleImputer de sklearn)
-3. Escale los datos con StandardScaler
-4. Devuelva X e y como arrays de numpy
+1. Separe X e y usando target_col.
+2. Impute los valores faltantes usando la mediana (SimpleImputer de sklearn con strategy='median').
+3. Escale los datos usando RobustScaler para manejar valores atípicos.
+4. Devuelva X e y como arrays de numpy.
