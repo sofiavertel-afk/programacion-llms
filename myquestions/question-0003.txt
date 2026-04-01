@@ -1,0 +1,7 @@
+Se tiene un DataFrame con variables numéricas y una columna objetivo para clasificación.
+
+Escribe una función llamada entrenar_modelo(df, target_col) que:
+
+1. Separe las variables predictoras (X) y la variable objetivo (y)
+2. Entrene un modelo de regresión logística usando sklearn
+3. Devuelva el modelo entrenado
