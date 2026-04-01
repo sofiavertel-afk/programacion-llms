@@ -1,0 +1,7 @@
+Se tiene un DataFrame de pandas con valores duplicados y valores faltantes.
+
+Escribe una función llamada limpiar_datos(df) que:
+
+1. Elimine filas duplicadas
+2. Elimine columnas que tengan más del 50% de valores nulos
+3. Devuelva el DataFrame limpio
