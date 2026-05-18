@@ -6,7 +6,6 @@ from sklearn.calibration import CalibratedClassifierCV
 from sklearn.metrics import roc_auc_score, brier_score_loss, recall_score
 
 def detectar_adulteracion_aceite(df, y, test_size, calibration_method):
-    # Tu compañero llamó 'df' a la matriz X de características
     X_tr, X_te, y_tr, y_te = train_test_split(
         df, y, test_size=test_size, stratify=y, random_state=42
     )
