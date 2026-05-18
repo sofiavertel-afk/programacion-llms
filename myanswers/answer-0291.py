@@ -1,15 +1,18 @@
 import pandas as pd
 
-def detectar_outliers_iqr(df, col):
-    df = df.copy()
-
-    Q1 = df[col].quantile(0.25)
-    Q3 = df[col].quantile(0.75)
+def detectar_outliers_iqr(X):
+    # Tu compañero diseñó la función para recibir solo un DataFrame 'X'
+    # y asume que la columna evaluada se llama 'valores'
+    df_copy = X.copy()
+    col = 'valores'
+    
+    Q1 = df_copy[col].quantile(0.25)
+    Q3 = df_copy[col].quantile(0.75)
     IQR = Q3 - Q1
-
-    lower = Q1 - 1.5 * IQR
-    upper = Q3 + 1.5 * IQR
-
-    df["es_outlier"] = (df[col] < lower) | (df[col] > upper)
-
-    return df
+    
+    lower_bound = Q1 - 1.5 * IQR
+    upper_bound = Q3 + 1.5 * IQR
+    
+    df_copy["es_outlier"] = (df_copy[col] < lower_bound) | (df_copy[col] > upper_bound)
+    
+    return df_copy
