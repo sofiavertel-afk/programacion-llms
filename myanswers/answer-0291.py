@@ -1,8 +1,6 @@
 import pandas as pd
 
 def detectar_outliers_iqr(X):
-    # Tu compañero diseñó la función para recibir solo un DataFrame 'X'
-    # y asume que la columna evaluada se llama 'valores'
     df_copy = X.copy()
     col = 'valores'
     
