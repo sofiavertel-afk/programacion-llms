@@ -1,8 +1,7 @@
 import pandas as pd
 
-def detectar_outliers_iqr(X):
-    df_copy = X.copy()
-    col = 'valores'
+def detectar_outliers_iqr(df, col):
+    df_copy = df.copy()
     
     Q1 = df_copy[col].quantile(0.25)
     Q3 = df_copy[col].quantile(0.75)
