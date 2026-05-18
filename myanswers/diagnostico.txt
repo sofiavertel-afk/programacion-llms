@@ -1,1 +1,4 @@
-Todas las soluciones corren correctamente y coinciden con los generadores de casos de uso. No se presentan errores en las respuestas asignadas.
+Fase 2 - Diagnóstico de validación:
+
+- Las preguntas 0213 y 0291 presentaban inconsistencias entre los nombres de los argumentos descritos en el problema escrito y los que realmente ejecutaba el generador de casos de uso de los compañeros. Se ajustaron las firmas de las funciones en las soluciones correspondientes para acoplarse a sus estructuras de prueba.
+- La pregunta 0618 arroja un 'usecase generator error' ajeno a mi solución. El generador de casos de uso del compañero intenta invocar la función 'detectar_outliers_iqr()' pasando argumentos ('df' y 'col') que no coinciden con la firma esperada por su propio problema planteado, generando un TypeError en su script de validación. Mi solución se encuentra correctamente implementada según el enunciado.
